@@ -1,54 +1,80 @@
-# React + TypeScript + Vite
+# 🎓 Štátnicový generátor otázok pre Hanči
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> *Štátnice: všetky otázky sú na nervy, ale aspoň sú farebné.!*
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Čo to je?
 
-## Expanding the ESLint configuration
+Toto je interaktívna webová appka pre teba Hanči, ktorá:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* náhodne generuje štátnicové otázky z rôznych biomedických okruhov 🧬
+* umožňuje si každú otázku ohodnotiť podľa úrovne "vedela/nevedela" ✅ ❌
+* zapisuje poznámky (napr. *„Toto si fakt treba ešte zopakovať!“*)
+* ukazuje peknú farebnú štatistiku progresu 📊
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Inak povedané: **Tvoja mentálna mapa štátnicovej paniky.**
+
+---
+
+## 🧪 Okruhy, ktoré ťa čakajú a (ne)minú:
+
+* **Biomedicínský základ** 🔬
+* **Bioinformatika** 🧬
+* **Zpracování signálů a dat** 📈
+* **Biomedicínská technika** ⚙️
+
+Každý okruh má vlastnú farbičku, takže hneď vieš, kde ťa to bolí najviac. 😅
+
+---
+
+## 🚀 Ako to spustiť?
+
+Ak si (ešte) nestratila nervy, tu je návod:
+
+```bash
+git clone https://github.com/tvoj-repo/statnice-generator.git
+cd statnice-generator
+npm install
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Potom otvoriť `http://localhost:3000` a nechaj osud rozhodnúť tvoju intelektuálnu budúcnosť. 🙃
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠️ Technológie
+
+* React ⚛️
+* React Router 🧽
+* JSON otázky v `otazky.json` 📦
+
+---
+
+## 🧱 Zábavný mód
+
+Ak si dala otázke hodnotenie "Vôbec nevedela ❌" trikrát za sebou – možno je čas na kávu, prechádzku, alebo výkrik do vankúša. Tento generátor zatiaľ nemá "motivational quotes", ale ak budeš chcieť, môžeme pridať funkciu „Zúfalý mód“.
+
+---
+
+## 💡 Budúce plány (určite nikdy neurobené)
+
+* Export poznámok do PDF 📀
+* Zobrazenie otázok, ktoré robia najväčší problém 🔥
+* Grafy pokroku v čase 📉
+
+---
+
+## 🪶 Prečo to vzniklo?
+
+Lebo si niekto zaslúži stresovať aspoň trochu pred štátnicami. (ty)
+
+A možno aj preto, lebo niekto prokrastinoval tým, že radšej naprogramoval celú appku. (ja) 😅
+
+---
+
+## 🫶 Good luck!
+
+A nezabudni: **Nie je hanba niečo nevedieť. Hanba je nemať tento generátor!**
+
+S poľutovaním muním uznať, že celý tento projekt bol viac-menej (skôr viac) vygenerovaný umelou inteligenciou, ktorej týmto spôsobom ďakujem za spoluprácu. 
